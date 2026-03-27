@@ -13,7 +13,7 @@ export default function Contact() {
           <motion.div initial={{ opacity: 1, x: 0 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="space-y-6">
             {[
               { icon: MapPin, title: 'Address', lines: ['Main Road, Bantalab', 'Near Barnai Road, Jammu - 181123'] },
-              { icon: Phone, title: 'Phone / WhatsApp', lines: ['+91 99999 00000'] },
+              { icon: Phone, title: 'Phone / WhatsApp', lines: ['+91 70061 52340'] },
               { icon: Clock, title: 'Store Hours', lines: ['Mon – Sat: 10:00 AM – 8:00 PM', 'Sunday: 11:00 AM – 5:00 PM'] },
             ].map(({ icon: Icon, title, lines }) => (
               <div key={title} className="flex gap-4 p-5 rounded-2xl" style={{ background: '#FDF8F0' }}>
@@ -26,7 +26,7 @@ export default function Contact() {
                 </div>
               </div>
             ))}
-            <a href="https://wa.me/919999000000" target="_blank" rel="noopener noreferrer"
+            <a href="https://wa.me/917006152340" target="_blank" rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 py-4 rounded-full text-white font-semibold text-base w-full transition-transform hover:scale-105"
               style={{ background: '#25D366' }}>
               💬 Chat on WhatsApp

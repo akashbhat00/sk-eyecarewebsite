@@ -44,7 +44,7 @@ export default function Footer() {
           <p className="text-sm text-gray-400 mb-1">Main Road, Bantalab</p>
           <p className="text-sm text-gray-400 mb-1">Jammu - 181123</p>
           <p className="text-sm text-gray-400 mb-4">Mon–Sat: 10 AM – 8 PM</p>
-          <a href="https://wa.me/919999000000" target="_blank" rel="noopener noreferrer"
+          <a href="https://wa.me/917006152340" target="_blank" rel="noopener noreferrer"
             className="inline-block px-5 py-2 rounded-full text-xs font-semibold text-white" style={{ background: '#25D366' }}>
             💬 WhatsApp Us
           </a>

@@ -49,7 +49,7 @@ export default function WhyUs() {
 
             <div className="mt-8">
               <a
-                href="https://wa.me/919999000000"
+                href="https://wa.me/917006152340"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-7 py-3 rounded-full text-sm font-semibold transition-transform hover:scale-105"

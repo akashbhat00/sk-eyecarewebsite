@@ -60,7 +60,7 @@ export default function Navbar() {
         {/* WhatsApp CTA */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="https://wa.me/919999000000"
+            href="https://wa.me/917006152340"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2 rounded-full text-sm font-semibold text-white transition-transform hover:scale-105"
@@ -100,7 +100,7 @@ export default function Navbar() {
               </button>
             ))}
             <a
-              href="https://wa.me/919999000000"
+              href="https://wa.me/917006152340"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 flex items-center justify-center px-5 py-3 rounded-full text-sm font-semibold text-white"
