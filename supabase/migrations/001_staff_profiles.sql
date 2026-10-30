@@ -8,6 +8,10 @@ create table if not exists public.staff_profiles (
 
 alter table public.staff_profiles enable row level security;
 
+-- Explicit grants: projects created with "Automatically expose new tables" off grant nothing by default.
+revoke all on public.staff_profiles from anon, authenticated;
+grant select on public.staff_profiles to authenticated;
+
 -- A signed-in user may read only their own profile (used to resolve their role at login).
 create policy "staff read own profile"
   on public.staff_profiles for select

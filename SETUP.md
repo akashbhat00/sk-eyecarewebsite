@@ -5,7 +5,9 @@ validates the details and hands them off to WhatsApp, and `#/admin` shows a "not
 
 ## 1. Create the Supabase project
 
-1. Sign up at https://supabase.com and create a project (free tier; region: Mumbai `ap-south-1`).
+1. Sign up at https://supabase.com and create a project (free tier; region: Mumbai `ap-south-1` if
+   offered). Under **Security** keep **Enable Data API** on; "Automatically expose new tables" can
+   stay off, because the migrations grant exactly the access the site needs.
 2. Open **SQL Editor** and run, in order:
    1. `supabase/migrations/001_staff_profiles.sql`
    2. `supabase/migrations/002_inquiries.sql`
