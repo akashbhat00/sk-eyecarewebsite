@@ -6,10 +6,11 @@ create table if not exists public.inquiries (
   name           text not null check (char_length(name) between 2 and 100),
   phone          text not null check (phone ~ '^[6-9][0-9]{9}$'),
   service        text not null check (service in (
-                   'Eye Test', 'New Spectacles', 'Sunglasses', 'Contact Lenses',
-                   'Frame Repair', 'Lens Replacement', 'Other')),
+                   'Eye test', 'Frame fitting & repair', 'Lens replacement',
+                   'Contact lens fitting', 'Other')),
   preferred_date date,
-  preferred_time text check (preferred_time in ('Morning (10–12)', 'Afternoon (12–4)', 'Evening (4–8)')),
+  preferred_time text check (preferred_time in (
+                   '10–11 AM', '11 AM–12 PM', '12–1 PM', '3–4 PM', '5–6 PM', '7–8 PM')),
   message        text check (char_length(message) <= 1000),
   status         text not null default 'new' check (status in ('new', 'contacted', 'done'))
 );

@@ -18,16 +18,14 @@ export const STATUS_TRANSITIONS = {
 
 // Keep in sync with the CHECK constraint in supabase/migrations/002_inquiries.sql
 export const INQUIRY_SERVICES = [
-  'Eye Test',
-  'New Spectacles',
-  'Sunglasses',
-  'Contact Lenses',
-  'Frame Repair',
-  'Lens Replacement',
+  'Eye test',
+  'Frame fitting & repair',
+  'Lens replacement',
+  'Contact lens fitting',
   'Other',
 ]
 
-export const TIME_SLOTS = ['Morning (10–12)', 'Afternoon (12–4)', 'Evening (4–8)']
+export const TIME_SLOTS = ['10–11 AM', '11 AM–12 PM', '12–1 PM', '3–4 PM', '5–6 PM', '7–8 PM']
 
 export const INQUIRY_LIMITS = {
   NAME_MIN: 2,

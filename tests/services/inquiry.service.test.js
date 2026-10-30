@@ -7,9 +7,9 @@ import { ERROR_CODES } from '../../src/shared/errors/app-error'
 const input = {
   name: 'Priya Gupta',
   phone: '9876543210',
-  service: 'Contact Lenses',
+  service: 'Contact lens fitting',
   preferredDate: todayISODate(),
-  preferredTime: 'Evening (4–8)',
+  preferredTime: '5–6 PM',
   message: 'Need monthly lenses',
 }
 

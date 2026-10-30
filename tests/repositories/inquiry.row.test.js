@@ -8,9 +8,9 @@ describe('inquiry row mapping', () => {
       created_at: '2026-10-30T10:00:00Z',
       name: 'Sunita Verma',
       phone: '9876543210',
-      service: 'Eye Test',
+      service: 'Eye test',
       preferred_date: '2026-11-02',
-      preferred_time: 'Morning (10–12)',
+      preferred_time: '10–11 AM',
       message: null,
       status: 'new',
     }
@@ -19,9 +19,9 @@ describe('inquiry row mapping', () => {
       createdAt: '2026-10-30T10:00:00Z',
       name: 'Sunita Verma',
       phone: '9876543210',
-      service: 'Eye Test',
+      service: 'Eye test',
       preferredDate: '2026-11-02',
-      preferredTime: 'Morning (10–12)',
+      preferredTime: '10–11 AM',
       message: null,
       status: 'new',
     })

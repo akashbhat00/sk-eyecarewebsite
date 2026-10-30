@@ -2,7 +2,7 @@ import { BACKEND } from '../config/env.config'
 import { createMemoryAuthRepository } from './memory/memory-auth.repository'
 import { createMemoryInquiryRepository } from './memory/memory-inquiry.repository'
 import { createSupabaseAuthRepository } from './supabase/supabase-auth.repository'
-import { createSupabaseClient } from './supabase/supabase.client'
+import { createSupabaseClientLoader } from './supabase/supabase.client'
 import { createSupabaseInquiryRepository } from './supabase/supabase-inquiry.repository'
 
 /**
@@ -22,12 +22,12 @@ export function createRepositories(config) {
       }
 
     case BACKEND.SUPABASE: {
-      const client = createSupabaseClient(config)
-      if (!client) return { isConfigured: false, inquiryRepository: null, authRepository: null }
+      const getClient = createSupabaseClientLoader(config)
+      if (!getClient) return { isConfigured: false, inquiryRepository: null, authRepository: null }
       return {
         isConfigured: true,
-        inquiryRepository: createSupabaseInquiryRepository(client),
-        authRepository: createSupabaseAuthRepository(client),
+        inquiryRepository: createSupabaseInquiryRepository(getClient),
+        authRepository: createSupabaseAuthRepository(getClient),
       }
     }
 

@@ -4,7 +4,7 @@ import { normalizeIndianPhone, todayISODate, validateNewInquiry } from '../../sr
 const valid = {
   name: '  Rahul Sharma ',
   phone: '+91 98765 43210',
-  service: 'Eye Test',
+  service: 'Eye test',
   preferredDate: todayISODate(),
   preferredTime: '',
   message: '  ',
@@ -28,7 +28,7 @@ describe('validateNewInquiry', () => {
     expect(result.data).toEqual({
       name: 'Rahul Sharma',
       phone: '9876543210',
-      service: 'Eye Test',
+      service: 'Eye test',
       preferredDate: todayISODate(),
       preferredTime: null,
       message: null,

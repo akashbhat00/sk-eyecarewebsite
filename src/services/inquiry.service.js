@@ -21,6 +21,9 @@ export function createInquiryService({ inquiryRepository }) {
   return {
     canTransition,
 
+    /** Validates without storing; used when bookings are handed off to WhatsApp instead. */
+    validate: validateNewInquiry,
+
     /** Validates and stores a visitor's enquiry. Throws AppError(VALIDATION) with fieldErrors. */
     async submitInquiry(input) {
       const result = validateNewInquiry(input)
