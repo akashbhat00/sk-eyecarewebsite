@@ -1,16 +1,25 @@
-# React + Vite
+# SK Eye Care & Opticals — Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Storefront and enquiry system for SK Eye Care & Opticals, Bantalab, Jammu.
+React 19 + Vite + Tailwind 4, Supabase for data, deployed to GitHub Pages.
 
-Currently, two official plugins are available:
+- Live site: https://akashbhat00.github.io/sk-eyecarewebsite/
+- Admin: https://akashbhat00.github.io/sk-eyecarewebsite/#/admin
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Commands
 
-## React Compiler
+| Command | What it does |
+|---|---|
+| `npm run dev` | Local dev server |
+| `npm test` | Unit tests (Vitest) |
+| `npm run lint` | ESLint |
+| `npm run build` | Production build into `dist/` |
+| `npm run deploy` | Build and publish to GitHub Pages |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Run `VITE_BACKEND=memory npm run dev` to try the booking form and admin without Supabase
+(admin password `demo1234`, any email; data resets on reload).
 
-## Expanding the ESLint configuration
+## Docs
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [SETUP.md](SETUP.md): connect Supabase, create the owner login, deploy
+- [ARCHITECTURE.md](ARCHITECTURE.md): layers, folder conventions, how to add features or a new backend
