@@ -29,7 +29,7 @@ export const siteConfig = {
   },
   promoMessages: [
     'Free eye test with every visit',
-    'Home delivery across Jammu city',
+    'Home delivery in Jammu city',
     'Frames starting at ₹999',
   ],
 }

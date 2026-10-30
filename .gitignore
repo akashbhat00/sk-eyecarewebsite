@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local env and preview builds
+.env
+.env.*
+!.env.example
+dist-memory
